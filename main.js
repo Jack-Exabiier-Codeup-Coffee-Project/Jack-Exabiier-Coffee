@@ -26,9 +26,9 @@ function updateCoffees(e) {
     if (selectedRoast === 'all'){
          // let x = document.querySelectorAll(coffees.roast);
          // filteredCoffees.push(x);
+
         filteredCoffees = coffees.filter(function(coffee){
             return coffee.roast !== selectedRoast;})
-
 
         // coffees.forEach(function(coffee){
         //     filteredCoffees.push(coffee.roast);
@@ -36,7 +36,6 @@ function updateCoffees(e) {
 
         // filteredCoffees.push(coffee.roast);
          // filteredCoffees = document.querySelectorAll(coffees.roast);
-
     }
     else {
 
@@ -72,28 +71,20 @@ var coffees = [
     {id: 12, name: 'Viennese', roast: 'dark'},
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
-
-    // {id: 15, name: 'Light City', roast: 'all'},
-    // {id: 16, name: 'Half City', roast: 'all'},
-    // {id: 17, name: 'Cinnamon', roast: 'all'},
-    // {id: 18, name: 'City', roast: 'medium'},
-    // {id: 19, name: 'American', roast: 'medium'},
-    // {id: 20, name: 'Breakfast', roast: 'medium'},
-    // {id: 21, name: 'High', roast: 'dark'},
-    // {id: 22, name: 'Continental', roast: 'dark'},
-    // {id: 23, name: 'New Orleans', roast: 'dark'},
-    // {id: 24, name: 'European', roast: 'dark'},
-    // {id: 25, name: 'Espresso', roast: 'dark'},
-    // {id: 26, name: 'Viennese', roast: 'dark'},
-    // {id: 27, name: 'Italian', roast: 'dark'},
-    // {id: 28, name: 'French', roast: 'dark'},
-
-
-
-
 ];
 
+// search for coffees
+function checkForName (string, coffees.name) {
+    let filteredCoffees = [];
+    for (var i=0; i<coffees.name.length; i++) {
 
+        if (coffees.name.toLowerCase()[i].match(string.toLowerCase())){
+            filteredCoffees = [i];
+
+        return filteredCoffees;
+    }
+
+}
 
 
 
