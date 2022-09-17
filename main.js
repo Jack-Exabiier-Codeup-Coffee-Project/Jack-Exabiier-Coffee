@@ -3,7 +3,7 @@
 // how the format of the coffee is.
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<p><h1>' + coffee.name + '</h1></p>';
+    html += '<p><h2>' + coffee.name + '</h2></p>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
@@ -125,3 +125,24 @@ tbody.innerHTML = renderCoffees(coffees);
 
 
 submitButton.addEventListener('click', updateCoffees);
+
+//
+const search = () =>{
+    const searchbox = document.getElementById(`coffee-compare`).value.toUpperCase();
+    //the container in which the coffee is in in the HTML
+    const coffees = document.getElementById(`coffees`)
+    const coffee = document.querySelectorAll(".coffee")
+    const coffeeName = document.getElementsByTagName("h2")
+    for(let i=0; i<coffeeName.length; i++){
+        let match = coffee[i].getElementsByTagName('h2')[0];
+        if(match){
+            let textValue =  match.textContent || match.innerHTML
+            if(textValue.toUpperCase().indexOf(searchbox) > -1){
+                coffee[i].style.display = '';}
+            else{
+                coffee[i].style.display = 'none'
+
+            }
+        }
+    }
+}
