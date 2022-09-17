@@ -85,19 +85,19 @@ var coffees = [
 //     }
 //
 // }
-function coffeeSearch() {
-
-    console.log(CoffeeSearchUserInput.value);
-}
+// function coffeeSearch() {
+//
+//     console.log(CoffeeSearchUserInput.value);
+// }
 
 //testing for getting value form page
-function getInputValue(){
-    // Selecting the input element and get its value
-    var inputVal = document.getElementById("myInput").value;
-
-    // Displaying the value
-    alert(inputVal);
-}
+// function getInputValue(){
+//     // Selecting the input element and get its value
+//     var inputVal = document.getElementById("myInput").value;
+//
+//     // Displaying the value
+//     alert(inputVal);
+// }
 
 
 
@@ -116,6 +116,8 @@ var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
+
+
 // var CoffeeSearchUserInput = document.querySelector(`#coffee-compare`);
 var CoffeeSearchUserInput = document.getElementById(`coffee-compare`);
 
@@ -125,7 +127,7 @@ tbody.innerHTML = renderCoffees(coffees);
 
 
 submitButton.addEventListener('click', updateCoffees);
-
+roastSelection.addEventListener('change', updateCoffees);
 //
 const search = () =>{
     const searchbox = document.getElementById(`coffee-compare`).value.toUpperCase();
