@@ -1,6 +1,6 @@
 "use strict"
 
-// how
+// how the format of the coffee is.
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     html += '<p><h1>' + coffee.name + '</h1></p>';
@@ -74,16 +74,29 @@ var coffees = [
 ];
 
 // search for coffees
-function checkForName (string, coffees.name) {
-    let filteredCoffees = [];
-    for (var i=0; i<coffees.name.length; i++) {
+// function checkForName (string, coffees.name) {
+//     let filteredCoffees = [];
+//     for (var i=0; i<coffees.name.length; i++) {
+//
+//         if (coffees.name.toLowerCase()[i].match(string.toLowerCase())){
+//             filteredCoffees = [i];
+//
+//         return filteredCoffees;
+//     }
+//
+// }
+function coffeeSearch() {
 
-        if (coffees.name.toLowerCase()[i].match(string.toLowerCase())){
-            filteredCoffees = [i];
+    console.log(CoffeeSearchUserInput.value);
+}
 
-        return filteredCoffees;
-    }
+//testing for getting value form page
+function getInputValue(){
+    // Selecting the input element and get its value
+    var inputVal = document.getElementById("myInput").value;
 
+    // Displaying the value
+    alert(inputVal);
 }
 
 
@@ -94,10 +107,21 @@ function checkForName (string, coffees.name) {
 
 
 
+
+
+
+
+//input from the webpage
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
+// var CoffeeSearchUserInput = document.querySelector(`#coffee-compare`);
+var CoffeeSearchUserInput = document.getElementById(`coffee-compare`);
+
+//the section where the coffee outputs go
 tbody.innerHTML = renderCoffees(coffees);
+
+
 
 submitButton.addEventListener('click', updateCoffees);
