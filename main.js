@@ -119,7 +119,7 @@ var roastSelection = document.querySelector('#roast-selection');
 
 
 // var CoffeeSearchUserInput = document.querySelector(`#coffee-compare`);
-var CoffeeSearchUserInput = document.getElementById(`coffee-compare`);
+// var CoffeeSearchUserInput = document.getElementById(`coffee-compare`);
 
 //the section where the coffee outputs go
 tbody.innerHTML = renderCoffees(coffees);
@@ -147,4 +147,29 @@ const search = () =>{
             }
         }
     }
+}
+
+//the function for adding to the coffee array
+var addRoastSelection = document.querySelector('#roast-selection-add');
+let userInput = document.querySelector('#userInput')
+let newCoffeeSumbit = document.getElementById('submit-new-coffee')
+
+
+
+newCoffeeSumbit.addEventListener('onclick', addCoffee)
+newCoffeeSumbit.addEventListener('click', updateCoffees)
+
+function addCoffee() {
+    let newCoffee = {
+        id: coffees[coffees.length - 1].id + 1,
+        name: userInput.value,
+        roast: addRoastSelection.value};
+    coffees.push(newCoffee);
+    let x = [];
+
+    for(let i = 0; i < coffees.length; i++){
+        x = x + coffees[i];
+    }
+    return document.getElementById('test').innerHTML= x;
+    updateCoffees();
 }

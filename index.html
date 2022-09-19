@@ -12,7 +12,7 @@
         <input type="text" id="coffee-compare" onkeyup="search()" placeholder="Search products">
         <label for="coffee-compare"></label>
         <label for="roast-selection"></label>
-        <select id="roast-selection" >
+        <select id="roast-selection">
             <option>all</option>
             <option>light</option>
             <option>medium</option>
@@ -22,11 +22,20 @@
 
     </form>
 
+<!--    Changes made on sunday, this is ths Search bar process-->
+    <form>
 <!--    testing to get value from an input-->
-    <input type="text" placeholder="Type something..." id="myInput">
-    <button type="button" onclick="getInputValue();">Get Value</button>
+    <laebel for="roast-selection-add"></laebel>
+    <select id="roast-selection-add">
+        <option>light</option>
+        <option>medium</option>
+        <option>dark</option>
+    </select>
+    <input type="text" placeholder="Type something..." id="userInput">
+    <button id="submit-new-coffee" type="button" onclick="addCoffee()">Submit</button>
+    </form>
 
-
+    <p id="test"></p>
     <table>
         <thead>
             <tr>
