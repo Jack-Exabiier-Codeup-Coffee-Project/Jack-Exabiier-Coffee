@@ -89,6 +89,11 @@ function renderCoffees(coffees) {
     return html;
 }
 
+
+
+
+// const searchbox = document.getElementById(`coffee-compare`).value.toUpperCase();
+// searchbox.addEventListener('onkeyup', updateCoffees());
 // this is how the submit add
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
@@ -100,6 +105,8 @@ function updateCoffees(e) {
 
         filteredCoffees = coffees.filter(function(coffee){
             return coffee.roast !== selectedRoast;})
+
+            // && coffees.name.toUpperCase().includes(searchbox)
 
         // coffees.forEach(function(coffee){
         //     filteredCoffees.push(coffee.roast);

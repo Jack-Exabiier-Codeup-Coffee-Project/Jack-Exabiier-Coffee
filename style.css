@@ -12,6 +12,10 @@ h3 {
     color: #2c2222;
 }
 
+h1{
+    text-align: center;
+}
+
 .x-nav-bar{
     background-color: rgb(255, 76, 34);
     width: 100%;
