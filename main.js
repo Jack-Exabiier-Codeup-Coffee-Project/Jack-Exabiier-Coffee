@@ -31,6 +31,32 @@
 //     return html;
 // }
 
+// function renderCoffee(coffee) {
+//     var html = '';
+//     html += '<div class="card x-coffee-card mt-3">';
+//     html += '<div class="container">';
+//     html += '<div class="card-body row align-content-baseline">';
+//     html += '<img class="card-img col-2 ps-2" src="img/coffee-cup.gif" alt="pokecup" style="max-width: 100px">';
+//     html += '<div class="col">';
+//     html += '<div class="container">';
+//     html += '<div class="row-column">';
+//     html += '<h5 class="card-title col pt-3">' + coffee.name + '</h5>';
+//     html += '<p class="card-text col">' + coffee.roast + '</p>';
+//     html += '</div>';
+//     html += '</div>';
+//     html += '</div>';
+//
+//     // html += '<div class="col">';
+//     // html += '<img class="card-img col-2 ps-2" src="img/coffee-cup.gif" alt="pokecup" style="max-width: 100px">';
+//     // html += '</div>';
+//
+//
+//     html += '</div>';
+//     html += '</div>';
+//     html += '</div>';
+//     return html;
+// }
+
 function renderCoffee(coffee) {
     var html = '';
     html += '<div class="card x-coffee-card mt-3">';
@@ -45,6 +71,10 @@ function renderCoffee(coffee) {
     html += '</div>';
     html += '</div>';
     html += '</div>';
+    html += '<img class="card-img col-2 ps-2" src="img/100pokedollars.png" alt="pokecup" style="max-width: 100px">';
+    // html += '<div class="col">';
+    // html += '<img class="card-img col-2 ps-2" src="img/coffee-cup.gif" alt="pokecup" style="max-width: 100px">';
+    // html += '</div>';
     html += '</div>';
     html += '</div>';
     html += '</div>';
