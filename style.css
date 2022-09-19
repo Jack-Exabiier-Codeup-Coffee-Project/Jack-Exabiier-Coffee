@@ -22,3 +22,9 @@ h3 {
     border: 10px solid rgb(44, 34, 34) !important;
 
 }
+
+.x-coffee-card{
+    border: 5px solid #afe1b7 !important;
+    background-color: rgb(245, 254, 252) !important;
+    width: max-content;
+}

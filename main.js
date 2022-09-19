@@ -1,12 +1,53 @@
 "use strict"
 
 // how the format of the coffee is.
-function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
-    html += '<p><h2>' + coffee.name + '</h2></p>';
-    html += '<p>' + coffee.roast + '</p>';
-    html += '</div>';
 
+// function renderCoffee(coffee) {
+//     var html = '<div class="coffee">';
+//     html += '<p><h2>' + coffee.name + '</h2></p>';
+//     html += '<p>' + coffee.roast + '</p>';
+//     html += '</div>';
+//
+//     return html;
+// }
+
+// function renderCoffee(coffee) {
+//     var html = '';
+//     html += '<div class="card x-coffee-card mt-2">';
+//     html += '<div class="container">';
+//     html += '<div class="card-body row align-content-baseline">';
+//     html += '<img class="card-img col-2 ps-2" src="img/pokecup.png" alt="pokecup" style="max-width: 100px">';
+//     html += '<div class="col">';
+//     html += '<div class="container">';
+//     html += '<div class="row-column">';
+//     html += '<h5 class="card-title col pt-3">' + coffee.name + '</h5>';
+//     html += '<p class="card-text col">' + coffee.roast + '</p>';
+//     html += '</div>';
+//     html += '</div>';
+//     html += '</div>';
+//     html += '</div>';
+//     html += '</div>';
+//     html += '</div>';
+//     return html;
+// }
+
+function renderCoffee(coffee) {
+    var html = '';
+    html += '<div class="card x-coffee-card mt-3">';
+    html += '<div class="container">';
+    html += '<div class="card-body row align-content-baseline">';
+    html += '<img class="card-img col-2 ps-2" src="img/pokecup.png" alt="pokecup" style="max-width: 100px">';
+    html += '<div class="col">';
+    html += '<div class="container">';
+    html += '<div class="row-column">';
+    html += '<h5 class="card-title col pt-3">' + coffee.name + '</h5>';
+    html += '<p class="card-text col">' + coffee.roast + '</p>';
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
+    html += '</div>';
     return html;
 }
 
