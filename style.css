@@ -9,17 +9,24 @@ td, th {
 }
 
 h3 {
-    color: #fdfd1a;
+    color: #2c2222;
 }
 
+.x-nav-bar{
+    background-color: rgb(255, 76, 34);
+    width: 100%;
+    margin: 0 !important;
+    border-bottom: 5px solid white;
+}
 
 .x-selector{
-    background-color: yellow !important;
+    background-color: #c9f6dc !important;
+    border: 5px solid #b9f3c6 !important;
 }
 
 .x-card{
-    background-color: rgb(252, 56, 56) !important;
-    border: 10px solid rgb(44, 34, 34) !important;
+    border: 5px solid #afe1b7 !important;
+    background-color: rgb(245, 254, 252) !important;
 
 }
 
