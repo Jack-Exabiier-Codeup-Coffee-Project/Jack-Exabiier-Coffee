@@ -7,3 +7,18 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+h3 {
+    color: #fdfd1a;
+}
+
+
+.x-selector{
+    background-color: yellow !important;
+}
+
+.x-card{
+    background-color: rgb(252, 56, 56) !important;
+    border: 10px solid rgb(44, 34, 34) !important;
+
+}

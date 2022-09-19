@@ -4,49 +4,123 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Coffee!</h1>
 
-    <form>
-        <input type="text" id="coffee-compare" onkeyup="search()" placeholder="Search products">
-        <label for="coffee-compare"></label>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" >
+<!--    this is the nav bar for poke cafe!-->
+    <section class="x-nav-bar container">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
 
-    </form>
+<!--    contianer for coffee and coffee selector-->
 
-<!--    Changes made on sunday, this is ths Search bar process-->
-    <form>
-<!--    testing to get value from an input-->
-    <laebel for="roast-selection-add"></laebel>
-    <select id="roast-selection-add">
-        <option>light</option>
-        <option>medium</option>
-        <option>dark</option>
-    </select>
-    <input type="text" placeholder="Type something..." id="userInput">
-    <button id="submit-new-coffee" type="button" onclick="addCoffee()">Submit</button>
-    </form>
+    <section class="x-whole-container container">
+
+        <section class="row">
+            <!--        This is the div in which the coffee goes in-->
+            <div class="x-coffee-select col-6">
+            <table class="">
+                <!--        this is where the coffee goes-->
+    <!--            <thead></thead>-->
+                <tbody id="coffees" class="d-flex flex-wrap">
+                </tbody>
+            </table>
+            </div>
+
+
+<!--      this is the div section for the cards to-->
+        <div class="col-6">
+
+
+        <div class="pt-5">
+        <form class="card">
+
+            <label for="coffee-compare"><h3>Roast Select:</h3></label>
+            <label for="roast-selection"></label>
+            <select id="roast-selection">
+                <option>all</option>
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <h3>Search Coffee:</h3>
+            <input type="text" id="coffee-compare" onkeyup="search()" placeholder="Search products">
+            <input id="submit" type="submit" >
+        </form>
+        </div>
+        <!--            THis is title for Add coffee:-->
+        <div class="pt-2">
+            <h1>Add your favorite coffee:</h1>
+        </div>
+
+    <!--    Changes made on sunday, this is ths Search bar process-->
+        <div class="">
+            <form class="card x-card ">
+        <!--    testing to get value from an input-->
+
+            <laebel for="roast-selection-add"><h3 class="text-center">Roast Select:</h3></laebel>
+            <select id="roast-selection-add" class="x-selector text-center">
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <h3 class="text-center">Enter your coffee:</h3>
+            <input type="text" placeholder="Type something..." id="userInput">
+            <button id="submit-new-coffee" type="button" onclick="addCoffee()">Add Coffee</button>
+            </form>
+        </div>
+
 
     <p id="test"></p>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
-
+        </div>
+        </section>
+</section>
     <script src="main.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
