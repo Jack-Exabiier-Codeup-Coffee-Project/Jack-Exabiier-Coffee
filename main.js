@@ -36,7 +36,7 @@ function renderCoffee(coffee) {
     html += '<div class="card x-coffee-card mt-3">';
     html += '<div class="container">';
     html += '<div class="card-body row align-content-baseline">';
-    html += '<img class="card-img col-2 ps-2" src="img/pokecup.png" alt="pokecup" style="max-width: 100px">';
+    html += '<img class="card-img col-2 ps-2" src="img/coffee-cup.gif" alt="pokecup" style="max-width: 100px">';
     html += '<div class="col">';
     html += '<div class="container">';
     html += '<div class="row-column">';
