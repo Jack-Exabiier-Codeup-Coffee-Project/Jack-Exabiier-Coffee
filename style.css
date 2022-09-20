@@ -14,6 +14,8 @@ table {
     cursor: url("/img/pngfind.com-pokeballs-png-1357356.png"), auto;
     font-family:Pokemon-font;
     font-weight: lighter;
+    -webkit-text-stroke: 1px #171b4f;
+    letter-spacing: 4px;
 }
 
 .btn{
@@ -26,10 +28,10 @@ td, th {
     padding: 5px 10px;
 }
 h1{
-    color: #278031;
+    color: #14d38a;
 }
 h3, h5, .card-text, selector {
-    color: #93801c;
+    color: rgb(237, 213, 58);
 }
 
 
