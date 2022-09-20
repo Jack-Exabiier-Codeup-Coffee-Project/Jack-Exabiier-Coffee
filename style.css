@@ -16,17 +16,20 @@ table {
     font-weight: lighter;
 }
 
-btn{
-    background-color:black  !important;
+.btn{
+    background-color: #c9f6dc !important;
+    border: 1px solid black;
 }
 
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
-
+h1{
+    color: #278031;
+}
 h3, h5, .card-text, selector {
-    color: #9d891e;
+    color: #93801c;
 }
 
 
