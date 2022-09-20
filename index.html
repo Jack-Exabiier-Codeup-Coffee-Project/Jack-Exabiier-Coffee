@@ -16,9 +16,9 @@
         <nav class="navbar navbar-dark ">
             <div class="container-fluid justify-content-center">
                 <img src="img/Poke-Cafe.png" class="nav-pic">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<!--                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">-->
+<!--                    <span class="navbar-toggler-icon"></span>-->
+<!--                </button>-->
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
@@ -60,9 +60,9 @@
 
     <section class="x-whole-container container">
 
-        <section class="row">
+        <section class="row mt-3">
             <!--        This is the div in which the coffee goes in-->
-            <div class="x-coffee-select col-6">
+            <div class="x-coffee-select col-6 mt-4">
             <table class="">
                 <!--        this is where the coffee goes-->
     <!--            <thead></thead>-->
@@ -77,19 +77,19 @@
 
 
         <div class="pt-5">
-        <form class="card">
+        <form class="card x-card">
 
-            <label for="coffee-compare"><h3>Roast Select:</h3></label>
+            <label for="coffee-compare"><h3 class="text-center">Roast Select:</h3></label>
             <label for="roast-selection"></label>
-            <select id="roast-selection">
+            <select id="roast-selection" class="x-selector text-center">
                 <option>all</option>
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
             </select>
-            <h3>Search Coffee:</h3>
+            <h3 class="text-center">Search Coffee:</h3>
             <input type="text" id="coffee-compare" onkeyup="search()" placeholder="Search products">
-            <input id="submit" type="submit" >
+            <input id="submit" type="submit" class="btn">
         </form>
         </div>
         <!--            THis is title for Add coffee:-->
@@ -110,7 +110,7 @@
             </select>
             <h3 class="text-center">Enter your coffee:</h3>
             <input type="text" placeholder="Type something..." id="userInput" onkeyup="updateCoffees()">
-            <button id="submit-new-coffee" type="button" onclick="addCoffee()">Add Coffee</button>
+            <button id="submit-new-coffee" type="button" class="btn" onclick="addCoffee()">Add Coffee</button>
             </form>
 
             <div>

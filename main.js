@@ -65,7 +65,7 @@ function renderCoffee(coffee) {
     html += '<img class="card-img col-2 ps-2" src="img/coffee-cup.gif" alt="pokecup" style="max-width: 100px">';
     html += '<div class="col">';
     html += '<div class="container">';
-    html += '<div class="row-column">';
+    html += '<div class=" x-x row-column">';
     html += '<h5 class="card-title col pt-3">' + coffee.name + '</h5>';
     html += '<p class="card-text col">' + coffee.roast + '</p>';
     html += '</div>';
@@ -93,7 +93,20 @@ function renderCoffees(coffees) {
 
 
 // const searchbox = document.getElementById(`coffee-compare`).value.toUpperCase();
-// searchbox.addEventListener('onkeyup', updateCoffees());
+// searchbox.addEventListener('onkeyup',searchBars() );
+//
+// function searchBars(){
+//     let x = document.getElementsByClassName("x-coffee-card")
+//     coffees.forEach(coffee =>{
+//         const isVisible =
+//             coffee.name.toUpperCase().includes(searchbox);
+//         x.element.toggle('hide', !isVisible)
+//         }
+//     )
+// }
+
+
+
 // this is how the submit add
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
@@ -101,10 +114,10 @@ function updateCoffees(e) {
     let filteredCoffees = [];
     if (selectedRoast === 'all'){
          // let x = document.querySelectorAll(coffees.roast);
-         // filteredCoffees.push(x);
+         // filteredCoffees.push(x)
 
         filteredCoffees = coffees.filter(function(coffee){
-            return coffee.roast !== selectedRoast;})
+            return coffee.roast !== selectedRoast ;})
 
             // && coffees.name.toUpperCase().includes(searchbox)
 
@@ -196,8 +209,8 @@ var roastSelection = document.querySelector('#roast-selection');
 
 
 
-// var CoffeeSearchUserInput = document.querySelector(`#coffee-compare`);
-// var CoffeeSearchUserInput = document.getElementById(`coffee-compare`);
+var CoffeeSearchUserInput = document.querySelector(`#coffee-compare`);
+var CoffeeSearchUserInput = document.getElementById(`coffee-compare`);
 
 //the section where the coffee outputs go
 tbody.innerHTML = renderCoffees(coffees);
@@ -206,15 +219,15 @@ tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 roastSelection.addEventListener('change', updateCoffees);
-//
+
 const search = () =>{
     const searchbox = document.getElementById(`coffee-compare`).value.toUpperCase();
     //the container in which the coffee is in in the HTML
     const coffees = document.getElementById(`coffees`)
-    const coffee = document.querySelectorAll(".coffee")
-    const coffeeName = document.getElementsByTagName("h2")
+    const coffee = document.querySelectorAll(".x-x")
+    const coffeeName = document.getElementsByTagName("h5")
     for(let i=0; i<coffeeName.length; i++){
-        let match = coffee[i].getElementsByTagName('h2')[0];
+        let match = coffee[i].getElementsByTagName('h5')[0];
         if(match){
             let textValue =  match.textContent || match.innerHTML
             if(textValue.toUpperCase().indexOf(searchbox) > -1){
@@ -248,6 +261,6 @@ function addCoffee() {
     for(let i = 0; i < coffees.length; i++){
         x = x + coffees[i];
     }
-    return document.getElementById('test').innerHTML= x;
+    // return document.getElementById('test').innerHTML= x;
     updateCoffees();
 }

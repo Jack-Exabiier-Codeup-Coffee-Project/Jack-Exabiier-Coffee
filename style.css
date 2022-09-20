@@ -1,6 +1,16 @@
+@font-face {
+    font-family: Pokemon-font;
+    src: url("/img/") ;
+}
+
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
+}
+
+*{
+    cursor: url("/img/pngfind.com-pokeballs-png-1357356.png"), auto;
 }
 
 td, th {
@@ -34,6 +44,11 @@ h1{
 
 }
 
+tbody {
+    overflow: scroll;
+    height: 100vh;
+}
+
 .x-coffee-card{
     border: 5px solid #afe1b7 !important;
     background-color: rgb(245, 254, 252) !important;
@@ -56,3 +71,4 @@ body{
     height: 150px;
     /*object-fit: cover ;*/
 }
+
