@@ -59,7 +59,7 @@
 
 function renderCoffee(coffee) {
     var html = '';
-    html += '<div class="card x-coffee-card mt-3">';
+    html += '<div class="card x-coffee-card mt-3 mr-3" style="height: 150px">';
     html += '<div class="container">';
     html += '<div class="card-body row align-content-baseline">';
     html += '<img class="card-img col-2 ps-2" src="img/coffee-cup.gif" alt="pokecup" style="max-width: 100px">';
@@ -89,9 +89,6 @@ function renderCoffees(coffees) {
     return html;
 }
 
-
-
-
 // const searchbox = document.getElementById(`coffee-compare`).value.toUpperCase();
 // searchbox.addEventListener('onkeyup',searchBars() );
 //
@@ -105,9 +102,7 @@ function renderCoffees(coffees) {
 //     )
 // }
 
-
-
-// this is how the submit add
+// this is how the submit adds
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;

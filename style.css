@@ -1,15 +1,3 @@
-@font-face {
-    font-family: Pokemon-font;
-    src: url("/Fonts/Pokemon-Solid.ttf") ;
-}
-
-
-
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-}
-
 *{
     cursor: url("/img/pngfind.com-pokeballs-png-1357356.png"), auto;
     font-family:Pokemon-font;
@@ -18,26 +6,9 @@ table {
     letter-spacing: 4px;
 }
 
-.btn{
-    background-color: #c9f6dc !important;
-    border: 1px solid black;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
-h1{
-    color: #14d38a;
-}
-h3, h5, .card-text, selector {
-    color: rgb(237, 213, 58);
-}
-
-
-
-h1{
-    text-align: center;
+@font-face {
+    font-family: Pokemon-font;
+    src: url("/Fonts/Pokemon-Solid.ttf") ;
 }
 
 .x-nav-bar{
@@ -45,6 +16,36 @@ h1{
     width: 100%;
     margin: 0 !important;
     border-bottom: 10px solid white;
+}
+
+.nav-pic {
+    height: 150px;
+    /*object-fit: cover ;*/
+}
+
+body{
+    background-image: url("img/pokecafe-bg.png");
+    background-repeat: repeat;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+tbody {
+    overflow: scroll;
+    padding: 10px;
+    padding-bottom: 45px;
+    height: 92vh;
+}
+
+h1{
+    color: #14d38a;
+    text-align: center;
+}
+
+h3, h5, .card-text, selector {
+    color: rgb(237, 213, 58);
 }
 
 .x-selector{
@@ -55,24 +56,18 @@ h1{
 .x-card{
     border: 5px solid #afe1b7 !important;
     background-color: rgb(245, 254, 252) !important;
-
 }
 
-tbody {
-    overflow: scroll;
-    height: 100vh;
+.btn{
+    background-color: #c9f6dc !important;
+    border: 1px solid black;
 }
 
 .x-coffee-card{
     border: 5px solid #afe1b7 !important;
     background-color: rgb(245, 254, 252) !important;
     width: max-content;
-}
-
-body{
-    background-image: url("img/pokecafe-bg.png");
-
-    background-repeat: repeat;
+    /*margin-bottom: auto;*/
 }
 
 .squirtle {
@@ -81,8 +76,4 @@ body{
     object-fit: cover ;
 }
 
-.nav-pic {
-    height: 150px;
-    /*object-fit: cover ;*/
-}
 
