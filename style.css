@@ -56,6 +56,7 @@ h3, h5, .card-text, selector {
 .x-card{
     border: 5px solid #afe1b7 !important;
     background-color: rgb(245, 254, 252) !important;
+    box-shadow: 7px 10px rgba(0, 0, 0, 0.25);
 }
 
 .btn{
@@ -68,6 +69,7 @@ h3, h5, .card-text, selector {
     background-color: rgb(245, 254, 252) !important;
     width: max-content;
     /*margin-bottom: auto;*/
+    box-shadow: 7px 10px rgba(0, 0, 0, 0.25);
 }
 
 .squirtle {
