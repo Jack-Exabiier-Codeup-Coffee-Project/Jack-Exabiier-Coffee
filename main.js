@@ -219,7 +219,7 @@ const search = () =>{
     const searchbox = document.getElementById(`coffee-compare`).value.toUpperCase();
     //the container in which the coffee is in in the HTML
     const coffees = document.getElementById(`coffees`)
-    const coffee = document.querySelectorAll(".x-x")
+    const coffee = document.querySelectorAll(".x-coffee-card")
     const coffeeName = document.getElementsByTagName("h5")
     for(let i=0; i<coffeeName.length; i++){
         let match = coffee[i].getElementsByTagName('h5')[0];
