@@ -1,7 +1,8 @@
 @font-face {
     font-family: Pokemon-font;
-    src: url("/img/") ;
+    src: url("/Fonts/Pokemon-Solid.ttf") ;
 }
+
 
 
 table {
@@ -11,6 +12,12 @@ table {
 
 *{
     cursor: url("/img/pngfind.com-pokeballs-png-1357356.png"), auto;
+    font-family:Pokemon-font;
+    font-weight: lighter;
+}
+
+btn{
+    background-color:black  !important;
 }
 
 td, th {
@@ -18,9 +25,11 @@ td, th {
     padding: 5px 10px;
 }
 
-h3 {
-    color: #2c2222;
+h3, h5, .card-text, selector {
+    color: #9d891e;
 }
+
+
 
 h1{
     text-align: center;
